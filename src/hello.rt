@@ -1,0 +1,8 @@
+<rt-require dependency="question" as="Question" />
+<div>
+<h2>Hello React Templates</h2>
+	<h4>Points: {this.state.points}</h4>
+	<button rt-if="!this.state.question" onClick="{this.startGame}">Start Game</button>
+	<Question rt-if="this.state.question" content="{this.getQuestion()}" answered="{this.questionAnswered}" />
+
+</div>

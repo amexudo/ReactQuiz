@@ -1,0 +1,8 @@
+<div>
+	<h1>{this.props.content.questionTitle}</h1>
+	<h3>{this.props.content.questionContent}</h3>
+	<span onClick="()=>this.onAnswerClick(0)">{this.props.content.answers[0]}</span>
+	<span onClick="()=>this.onAnswerClick(1)">{this.props.content.answers[1]}</span>
+	<span onClick="()=>this.onAnswerClick(2)">{this.props.content.answers[2]}</span>
+	<span onClick="()=>this.onAnswerClick(3)">{this.props.content.answers[3]}</span>
+</div>
